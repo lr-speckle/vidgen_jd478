@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lr-speckle-vidgen_jd478"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告文生视频工程师·缓存命中率的归因相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "lr-speckle" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://lr-speckle.github.io"
+Repository = "https://github.com/lr-speckle/vidgen_jd478"
+Issues = "https://github.com/lr-speckle/vidgen_jd478/issues"
+
+[project.scripts]
+vidgen_jd478 = "vidgen_jd478:main"
+
+[tool.setuptools]
+py-modules = ["vidgen_jd478"]
